@@ -1,0 +1,16 @@
+<%@ page language="java" import="java.util.*" pageEncoding="gb2312"%>
+<%@ page import="java.text.*" %>
+
+<hr>
+<br><br>
+<center>
+   <font size="4" color="blue">
+	<b>系统制作人：冉得微</b>
+	&nbsp;&nbsp;&nbsp;
+	<b>当前系统时间：
+<% 
+String time = new SimpleDateFormat("yyyy-MM-dd").format(Calendar.getInstance().getTime());
+out.print(time);
+%>
+	</b>
+</center>
